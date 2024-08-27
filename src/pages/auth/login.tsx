@@ -8,7 +8,6 @@ import Link from "next/link";
 export default function LoginForm() {
     return (
         <div className="flex flex-col min-h-screen">
-            {/* Navbar com o botão de voltar */}
             <div className="w-full p-4">
                 <div className="container mx-auto flex items-center">
                     <Link href="/" className="flex items-center">
@@ -17,8 +16,6 @@ export default function LoginForm() {
                     </Link>
                 </div>
             </div>
-
-            {/* Centralizar o Card de Login */}
             <div className="flex flex-grow items-center justify-center">
                 <form method="POST">
                     <Card className="w-full max-w-sm mx-auto">
@@ -51,12 +48,6 @@ export default function LoginForm() {
                                 <Button type="submit" className="w-full">
                                     Login
                                 </Button>
-                            </div>
-                            <div className="mt-4 text-center text-sm">
-                                Não possui uma conta?{" "}
-                                <Link href="/create-account/register" className="underline">
-                                    Registrar
-                                </Link>
                             </div>
                         </CardContent>
                     </Card>
